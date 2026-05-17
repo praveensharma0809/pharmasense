@@ -9,6 +9,13 @@ sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 DB_PATH = "data/processed/pharmasense.db"
 
+if not Path(DB_PATH).exists():
+    st.info("🔄 Database not found. Running ETL pipeline (first-time setup)...")
+    from etl import run_pipeline
+    run_pipeline()
+    st.success("✅ Database ready!")
+    st.rerun()
+
 def run_query(query: str) -> pd.DataFrame:
     """Execute SQL and return DataFrame."""
     conn = sqlite3.connect(DB_PATH)
