@@ -2,7 +2,7 @@
 
 > End-to-end data analytics platform: ETL pipeline + normalized SQL warehouse + interactive dashboard surfacing 15 business insights from 66K+ pharma sales transactions.
 
-**Built for:** ZS Associates BTSA Application | **Tech Stack:** Python • SQL • SQLite • Streamlit • Pandas
+**Tech Stack:** Python • SQL • SQLite • Streamlit • Pandas
 
 ---
 
@@ -253,7 +253,7 @@ pharmasense/
 - Indexed strategically for query performance
 - Synthesized missing dimensions (regions, customers) to enable richer analytics
 
-**This project mirrors real ZS client engagements:** taking raw pharma data, structuring it for analytics, and surfacing insights that drive business decisions.
+**This project demonstrates real-world pharma consulting work:** taking raw sales data, structuring it for analytics, and surfacing insights that drive business decisions.
 
 ---
 
